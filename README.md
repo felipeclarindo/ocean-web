@@ -1,64 +1,65 @@
-# Projeto Sustentabilidade Marinha - Global Soluction
+🌍 [Leia em Português](README.pt-BR.md)
 
-O projeto Sustentabilidade Marinha visa criar uma plataforma para relatar praias em condições precárias que necessitam de limpeza. O site permite que usuários enviem relatos, que são então direcionados para ONGs e projetos dedicados à redução da poluição nos mares e oceanos do Brasil.
+# Ocean Web
 
-## Tecnologias Utilizadas
-- **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Flask (Python)
-- **Banco de Dados**: Integração via CRUD
-- **Outras Bibliotecas**:
-  - Font Awesome
-  - Google Material Icons
-  - Flask-CORS
+Web site that aims to create a platform to report beaches in poor conditions that need cleaning. The site allows users to submit reports, which are then directed to NGOs and projects dedicated to reducing pollution in the seas and oceans of Brazil.
 
+## Technologies Used
 
-## Como Executar o Projeto
+- `Html` - Create page structure.
+- `Css` - Apply styles to page.
+- `JavaScript` - Language used for the front.
+- `Python` - Language used for the back.
+- `Oracle DB` - Database used for sending data.
 
-1. **Clone o repositório**:
-   ```sh
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
-   ```
+## Passos para execução
 
-2. **Crie um ambiente virtual**:
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # Linux/Mac
-    venv\Scripts\activate     # Windows
-    ```
+1. Clone the repository:
 
-3. **Instale as dependencias**:
-    ```sh
-    pip install -r requirements.txt
-    ```
+```bash
+git clone https://github.com/felipeclarindo/ocean-web.git
+```
 
-4. Inicie a api:
-    ```sh
-    python app.py
-    ```
+2. Enter directory:
 
-5. Agora só abrir o index.html e o envio de dados do formulario ja estara funcionando!
+```bash
+cd ocean-web
+```
 
-## Funcionalidades
+3. Create the `Ambiente Virtual`:
 
-### Front End
-- Página Inicial: Contém informações sobre a importância dos oceanos e o impacto da poluição marinha.
-- Seção de Informações: Fornece dados adicionais sobre a vida marinha e os problemas enfrentados.
-- Formulário de Relato: Permite aos usuários enviar relatos sobre praias em estado precário.
+```bash
+python -m venv .venv
+```
 
-### Back End
-- Rota Principal (/): Renderiza a página inicial do formulário.
-- Rota de Envio de Dados (/relatos/post): Recebe os dados do formulário e os insere no banco de dados.
-- Rota de Atualização de Dados (/relatos/put): Atualiza os registros no banco de dados.
-- Rota de Atualização de Um Único Dado (/relatos/patch): Atualiza um único campo de um registro no banco de dados.
-- Rota de Remoção de Dados (/relatos/delete): Remove um registro do banco de dados.
-- Rota de Obtenção de Dados (/relatos/get): Retorna todos os registros do banco de dados.
-- Rota de Obtenção de Dados por ID (/relatos/get-with-id): Retorna um registro específico pelo ID.
+4. Enable `Virtual Environment` by running the `.bat` file in `.venv/Scripts/activate.bat`.
 
-## Exemplo de Uso
-Para enviar um relato, acesse a página inicial e clique no botão "Relate Aqui". Preencha o formulário com seu nome, email, nome da praia e uma breve descrição da situação. Ao enviar, os dados serão salvos no banco de dados e estarão disponíveis para as ONGs e projetos de limpeza marinha.
+5. Install dependencies:
 
-## Integrantes
-- Victor Augusto     ->  RM: 555059
-- Felipe Clarindo    ->  RM: 554547
-- Gustavo Hiratsuka  ->  RM: 557631
+```bash
+pip install -r requirements.txt
+```
+
+6. Run the api:
+
+```bash
+python database/app/app.py
+```
+
+7. Open the file `index.html`.
+
+## Contribution
+
+Contributions are welcome! If you have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+## Author
+
+**Felipe Clarindo**
+
+- [LinkedIn](https://www.linkedin.com/in/felipeclarindo)
+- [Instagram](https://www.instagram.com/lipethecoder)
+- [GitHub](https://github.com/felipeclarindo)
+
+## License
+
+This project is licensed under the [GNU Affero License](https://www.gnu.org/licenses/agpl-3.0.html).
